@@ -1,14 +1,14 @@
 {
-  "name": "vuetify",
-  "description": "Vue.js 2 Semantic Component Framework",
-  "version": "1.5.12",
+  "name": "@mariobuikhuizen/vuetify",
+  "description": "Vue.js 2 Semantic Component Framework modified for Jupyter",
+  "version": "1.5.12-alpha",
   "author": {
-    "name": "John Leider",
-    "email": "john@vuetifyjs.com"
+    "name": "Mario Buikhuizen",
+    "email": "mbuikhuizen@gmail.com"
   },
   "license": "MIT",
   "homepage": "http://vuetifyjs.com",
-  "repository": "vuetifyjs/vuetify",
+  "repository": "mariobuikhuizen/vuetify",
   "main": "dist/vuetify.js",
   "module": "dist/vuetify.js",
   "jsdelivr": "dist/vuetify.js",
