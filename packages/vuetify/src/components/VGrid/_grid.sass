@@ -1,6 +1,6 @@
 @import '../../styles/styles.sass'
 
-.container
+.v-container
   &.grow-shrink-0
     flex-grow: 0
     flex-shrink: 0
@@ -14,7 +14,7 @@
       flex: 1 1 100%
       max-width: calc(100% + #{$grid-gutter})
 
-    > .layout
+    > .v-layout
       height: 100%
       flex: 1 1 auto
 
@@ -25,24 +25,24 @@
   &.grid-list
     @each $size, $gutter in $grid-gutters
       &-#{$size}
-        .layout
-          .flex
+        .v-layout
+          .v-flex
             padding: $gutter / 2
 
-        .layout:only-child
+        .v-layout:only-child
           margin: -$gutter / 2
 
-        .layout:not(:only-child)
+        .v-layout:not(:only-child)
           margin: auto (-$gutter / 2)
 
         *:not(:only-child)
-          .layout:first-child
+          .v-layout:first-child
             margin-top: -$gutter / 2
 
-          .layout:last-child
+          .v-layout:last-child
             margin-bottom: -$gutter / 2
 
-.layout
+.v-layout
   display: flex
   flex: 1 1 auto
   flex-wrap: nowrap
@@ -58,7 +58,7 @@
     &.reverse
       flex-direction: column-reverse
 
-    > .flex
+    > .v-flex
       max-width: 100%
 
   &.wrap
@@ -72,25 +72,25 @@
   @media all and (min-width: #{$width})
     $n: $grid-columns
     @while $n > 0
-      .flex.#{$size}#{$n}
+      .v-flex.#{$size}#{$n}
         flex-basis: $n / $grid-columns * 100%
         flex-grow: 0
         max-width: $n / $grid-columns * 100%
 
-      .flex.order-#{$size}#{$n}
+      .v-flex.order-#{$size}#{$n}
         order: $n
 
       $n: $n - 1
 
     $m: $grid-columns
     @while $m >= 0
-      .flex.offset-#{$size}#{$m}
+      .v-flex.offset-#{$size}#{$m}
         // Offsets can only ever work in row layouts
         margin-left: $m / $grid-columns * 100%
 
       $m: $m - 1
 
-.flex,
+.v-flex,
 .child-flex > *
   flex: 1 1 auto
   max-width: 100%
