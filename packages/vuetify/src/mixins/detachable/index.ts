@@ -129,7 +129,7 @@ export default mixins<options &
       let target
       if (this.attach === false) {
         // Default, detach to app
-        target = document.querySelector('[data-app]')
+        target = document.querySelector('[vuetify-overlay]')
       } else if (typeof this.attach === 'string') {
         // CSS selector
         target = document.querySelector(this.attach)
@@ -139,7 +139,7 @@ export default mixins<options &
       }
 
       if (!target) {
-        consoleWarn(`Unable to locate target ${this.attach || '[data-app]'}`, this)
+        consoleWarn(`Unable to locate target ${this.attach || '[vuetify-overlay]'}`, this)
         return
       }
 
