@@ -17,7 +17,7 @@ export default function VGrid (name: string) {
     },
 
     render (h, { props, data, children }): VNode {
-      data.staticClass = (`${name} ${data.staticClass || ''}`).trim()
+      data.staticClass = (`v-${name} ${data.staticClass || ''}`).trim()
 
       const { attrs } = data
       if (attrs) {
