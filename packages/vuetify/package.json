@@ -1,16 +1,17 @@
 {
-  "name": "vuetify",
-  "description": "Vue Material Component Framework",
-  "version": "2.2.26",
+
+  "name": "@mariobuikhuizen/vuetify",
+  "description": "Vue.js 2 Semantic Component Framework modified for Jupyter",
+  "version": "2.2.26-rc.0",
   "author": {
-    "name": "John Leider",
-    "email": "john@vuetifyjs.com"
+    "name": "Mario Buikhuizen",
+    "email": "mariobuikhuizen@gmail.com"
   },
   "license": "MIT",
   "homepage": "https://vuetifyjs.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuetifyjs/vuetify.git",
+    "url": "git+https://github.com/mariobuikhuizen/vuetify.git",
     "directory": "packages/vuetify"
   },
   "keywords": [
