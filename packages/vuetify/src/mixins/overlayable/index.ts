@@ -72,7 +72,7 @@ export default Vue.extend<Vue & Toggleable & Stackable & options>().extend({
 
       const parent = this.absolute
         ? this.$el.parentNode
-        : document.querySelector('[data-app]')
+        : document.querySelector('[vuetify-overlay]')
 
       parent && parent.insertBefore(overlay.$el, parent.firstChild)
 
