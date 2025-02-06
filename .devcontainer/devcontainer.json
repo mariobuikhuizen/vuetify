@@ -1,0 +1,11 @@
+{
+  "name": "Node.js 12 Codespace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-12-bullseye",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
